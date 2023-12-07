@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: #fff;
+}
 
 .container {
   width: 100%;
@@ -21,4 +24,13 @@
 
 .gallery img {
   width: 100%;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
 }
